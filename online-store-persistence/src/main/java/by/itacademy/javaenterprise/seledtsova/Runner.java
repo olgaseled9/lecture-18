@@ -38,7 +38,7 @@ public class Runner {
         Item item = itemDao.findItemById(1L);
         logger.info("{}", item);
         logger.info("{}", itemDao.findAll());
-        Order order1=orderDao.findOrderByUsername("bird");
+        Order order1 = orderDao.findOrderByUsername("bird");
         logger.info("{}", order1);
         entityManager.close();
     }
